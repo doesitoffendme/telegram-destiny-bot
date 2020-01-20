@@ -4,8 +4,10 @@ import random
 # Подключаем модуль для Телеграма
 import telebot
 
+token = '811063357:AAFKRHsLl0M8FwUP9sDP385CTz9eyvnAJfU'
+
 # Прописываем токен
-bot = telebot.TeleBot('811063357:AAFKRHsLl0M8FwUP9sDP385CTz9eyvnAJfU')
+bot = telebot.TeleBot(token)
 
 # Импортируем типы из модуля, чтобы создавать кнопки
 from telebot import types
