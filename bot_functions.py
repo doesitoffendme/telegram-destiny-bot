@@ -4,7 +4,11 @@ import random
 # Подключаем модуль для Телеграма
 import telebot
 
-token = '811063357:AAFKRHsLl0M8FwUP9sDP385CTz9eyvnAJfU'
+import json
+with open('config.json') as config_file:
+    data = json.load(config_file)
+
+token = data['TOKEN']
 
 # Прописываем токен
 bot = telebot.TeleBot(token)
